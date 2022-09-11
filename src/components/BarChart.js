@@ -14,7 +14,7 @@ export default class BarChart extends React.Component {
                   label: 'Score',
                   backgroundColor: 'rgba(216, 224, 240)',
                   borderColor: 'rgba(66, 76, 94)',
-                  borderWidth: 2,
+                  borderWidth: 1,
                   data: Object.values(props.alignments)
                 }
               ]
@@ -24,23 +24,16 @@ export default class BarChart extends React.Component {
 
   render() {
     return (
-      <div>
         <Bar
           data={this.state}
           options={{
-            title:{
-              display:true,
-              text:'Alignment bar chart',
-              fontSize:20
+            x: {
+                max: 4
             },
-            legend:{
-              display:true,
-              position:'right'
-            },
-            indexAxis: 'y'
+            indexAxis: 'y',
+            responsive: true
           }}
         />
-      </div>
     );
   }
 }

@@ -2,3 +2,28 @@ h1 {
   color: rgba(29, 36, 48);
   font-style: italic;
 }
+
+.BarChart {
+  width: 200px
+}
+
+.Bar {
+  width: 50px
+}
+
+div {
+  margin: auto
+}
+
+* {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+}

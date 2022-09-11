@@ -40,7 +40,9 @@ const FirmDetails = ({ firm, products, handle }) => {
             )}
         </p>
         <h3>The alignment of the firm with different UN SDG goals:</h3>
-        <BarChart alignments={alignments} ></BarChart>
+        <div style={{height:'40%',width:'50%'}}>
+            <BarChart alignments={alignments} ></BarChart>
+        </div>
         <button onClick = {event => {handle(event, firm)}}>return to main page</button>
     </div>
     )
