@@ -4,8 +4,8 @@ const Firm = ({ selected_firm, firm, handle }) => {
     }
     return (
     <li className="firmList">
-        {firm.name} 
-        <button onClick = {event => {handle(firm)}}>select</button>
+        {firm.name}  
+        <button onClick = {(event) => {handle(event, firm)}}>select</button>
     </li>
     )
   }

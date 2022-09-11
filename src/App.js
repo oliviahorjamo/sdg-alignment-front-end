@@ -7,7 +7,7 @@ import firmService from './services/firms'
 const App = () => {
   const [firms, setFirms] = useState([])
   const [products, setProducts] = useState({})
-  const [firmClicked, setClickedFirm] = useState('')
+  const [firmClicked, setClickedFirm] = useState({})
 
 
   useEffect(() => {
@@ -26,12 +26,13 @@ const App = () => {
       })
   }, [firmClicked])
 
-  const handleClickFirm = (firm) => {
+  const handleClickFirm = (event, firm) => {
     setClickedFirm(firm)
   }
 
   const handleClickReturn = () => {
     setClickedFirm('')
+    setProducts({})
   }
 
   return (
